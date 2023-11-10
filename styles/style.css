@@ -56,12 +56,6 @@ a {
     font-weight: 400;
 }
 
-ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 .container-fluid {
     width: 100%;
     margin: 0 auto;
@@ -553,4 +547,55 @@ ul, li {
     text-align: center;
     padding: var(--spacing-2);
     flex: 0 0 auto;
+}
+
+/** ========== History Page Styles ========== **/
+.history {
+    background: white;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: var(--spacing-4) var(--spacing-6);
+}
+
+.history__head:first-child {
+    margin-top: 0;
+}
+
+.history__paragraph {
+    text-align: justify;
+}
+
+.history__quote {
+    background: rgba(var(--black), .05);
+    display: block;
+    padding: var(--spacing-10) var(--spacing-6);
+    margin: var(--spacing-2) 0;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.history__quote p {
+    z-index: 1;
+    position: relative;
+}
+
+.history__quote:before,
+.history__quote:after {
+    font-family: FontAwesome;
+    font-size: 100px;
+    position: absolute;
+    line-height: 0.65;
+    color: rgba(var(--primary), .4);
+}
+
+.history__quote:after {
+    content: '\f10d';
+    left: 30px;
+    bottom: 20px;
+}
+
+.history__quote:before {
+    content: '\f10e';
+    top: 20px;
+    right: 30px;
 }
