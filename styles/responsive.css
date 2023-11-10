@@ -1,0 +1,75 @@
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 991px) {
+    .gallery-shortcut__cards {
+        flex-wrap: wrap;
+    }
+    .gallery-shortcut-card {
+        flex: 1 0 calc(50% - (var(--spacing-4) * 3));
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .main-bar {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+    .navigation-bar__list {
+        flex-direction: column;
+    }
+
+    .navigation-bar__item:after {
+        display: block;
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, .2);
+        border-left: none;
+        height: 0;
+        margin: var(--spacing-4) 0 0;
+    }
+
+    .navigation-bar__item > a {
+        display: block;
+    }
+
+    .gallery-shortcut__header {
+        flex-wrap: wrap;
+        gap: var(--spacing-2);
+    }
+
+    .gallery-shortcut-card {
+        flex: 1 0 calc(100% - var(--spacing-4));
+        width: calc(100% - var(--spacing-4));
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .article__image {
+        width: 100%;
+    }
+
+    .article__image img {
+        width: 100%;
+    }
+}
