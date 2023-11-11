@@ -72,4 +72,9 @@
     .article__image img {
         width: 100%;
     }
+
+    .gallery__item {
+        flex-basis: 100%;
+        width: 100%;
+    }
 }
